@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato',sans-serif;
+}
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+    }
+    
+nav{
+        position: fixed;
+        z-index: 1;
+        top:0;
+        left:0;
+        height:70px;
+        background-color: rgb(254, 254, 254);
+        width:100%;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    
+.logopic{
+        position: relative;
+        height: 100%;
+        margin:0 auto;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+.nav-links{
+        display: flex;
+        align-items: center;
+    }
+    
+.nav-links li,.links{
+        list-style: none;
+        margin:0 20px;
+        color: black;
+    }
+.links{
+        padding-bottom: 5px;
+        position: relative;
+    }
+    
+.links::before{
+        content:"";
+        position: absolute;
+        bottom:-3px;
+        left:0;
+        height: 3px;
+        width:30%;
+        background: #0000006e;
+        border-radius: 50px;
+        transform: scaleX(0);
+        transition: transform 0.1s linear;
+        transform-origin: left;
+    
+    }
+.links:hover::before{
+        transform:scaleX(2);
+        color:#575757
+    }
+    
+.icons{
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    
+    }
+.user-img{
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    padding:10px;
+    display: flex;
+}  
+#photo{
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+    margin-left:240px;
+}
+
+#uploadbtn{
+    position: absolute;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    cursor: pointer;
+    color:#fff;
+}
+#file{
+    margin-left:40px;
+    margin-top:50px;
+}
+body{
+    font-family: 'Lato',sans-serif;
+    background: #ededed;
+}
+.container{
+    display: flex;
+    margin:100px 10px;
+}
+.profile{
+    flex:1;
+    margin-right:10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    width:150px;
+    padding:10px;
+}
+.profileheader{
+    display: flex;
+    margin-left:15px;
+}
+.profile-text-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:30px;
+    margin-top:50px;
+
+}
+.profile-email{
+    font-size: 20px;
+}
+.menu-link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:#768499;
+    border-radius: 10px;
+    font-family: 'Lato',sans-serif;
+    margin:4px;
+}
+
+.iconandnaming{
+    display: flex;
+    margin-top:20px;
+}
+.iconandnaming{
+    background-color: #ffffff;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(140, 142, 143, 0.2);
+    cursor: pointer;
+}
+.iconandnaming:hover{
+    background-color: #edecec;
+    transition-duration: 0.2s;
+}
+.account{
+    flex:2;
+    margin-left:10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    height:500px;
+}
+
+.account-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-bottom: 1px solid #768499;
+}
+
+.account-title{
+    font-family: 'Lato',sans-serif;
+    font-weight: 20px;
+    color:#1e293b;
+    font-weight: 500;
+    margin-left:10px;
+}
+
+.btn-container{
+    margin-right:5px;
+}
+.btn-cancel{
+    width:8em;
+    height:3em;
+    cursor: pointer;
+    border:1px solid #768499;
+    color:#1e293b;
+    font-weight: bold;
+    margin-right:5px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition-duration: 0.3s;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.account-edit{
+    display: flex;
+    justify-content: space-between;
+    margin:15px 0;   
+}
+
+.input-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin:0 20px;
+}

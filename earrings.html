@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earrings</title>
+    <link rel="stylesheet" href="earrings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logopic">
+            <img class="logo" src="images/logo.svg">
+            <ul class="nav-links">
+                <li><a class="links" href="index.html">HOME</a></li>
+                <li><a class="links" href="bestsellers.html">BEST SELLERS</a></li>
+                <li><a class="links" href="earrings.html">EARRINGS</a></li>
+                <li><a class="links" href="bracelets.html">BRACELETS</a></li>
+                <li><a class="links" href="necklaces.html">NECKLACES</a></li>
+            </ul>
+            <div class="icons">
+                <i id="loginshow" class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping" onclick="toggle()"></i>
+                <span class="quantity"></span>
+                <span class="quantity2"></span>
+            </div>
+        </div>
+    </nav>
+    </head>
+
+    <body>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Log in</h2>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button class="signin">Sign In</button>
+                </div>
+                <div class="form-element">
+                    <div class="forgotnew">
+                        <a class="forgot" href="#">Forgot Password</a>
+                        <a class="forgot" id="forgott" href="#">Don't have an account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Sign Up</h2>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-element">
+                    <label for="email">Surname</label>
+                    <input type="text" id="surname" placeholder="Enter surname">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <h6>Password must contain 8 letters</h6>
+                    <h6>Password must contain numbers</h6>
+                    <h6>Password must contain capitalized letters</h6>
+                </div>
+                <div class="form-element">
+                    <a href="C:\Users\Murat\Desktop\Website\userpage.html"><button class="signin">Sign Up</button></a>
+                </div>
+                <div class="form-element">
+                    <div class="forgotnew">
+                        <a class="login-link" id="login" href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <section class="banner">
+            <div class="missionbanner">
+                <img class="pictures3" src="earring/earring section.jpg">
+                <div class="text">
+                    <h2>ALL EARRINGS</h2>
+                    <p>Kasumi jewelry is a unique expression of the Maison's style, creativity, and savoir-faire. To
+                        learn more about these exceptional pieces, discover our collection of women’s earrings.</p>
+                </div>
+            </div>
+        </section>
+        <main>
+            <header>
+                <div class="indicatorlist">
+                    <h2>Earrings</h2>
+                    <h3>Elevate your jewelry ensemble with silver and gold bracelets.</h3>
+                    <div class="container-fluid">
+                        <div class="container3">
+                            <div class="search">
+                                <input type="text" name="" id="find" placeholder="Search" onkeyup="search()" />
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="indicator">
+                        <li data-filter="HOOP EARRINGS" class="active"><a href="#">HOOP EARRINGS</a></li>
+                        <li data-filter="STUD EARRINGS" class="active"><a href="#">STUD EARRINGS</a></li>
+                        <li data-filter="CARTILAGE & HELIX" class="active"><a href="#">CARTILAGE & HELIX</a></li>
+                        <li data-filter="DROP EARRINGS" class="active"><a href="#">DROP EARRINGS</a></li>
+                        <li data-filter="SINGLE EARRINGS" class="active"><a href="#">SINGLE EARRINGS</a></li>
+                        <li data-filter="PEARL EARRINGS" class="active"><a href="#">PEARL EARRINGS</a></li>
+                    </ul>
+                </div>
+            </header>
+            </div>
+        </main>
+        <div class="cart-container1" id="container1">
+            <div class="naming">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Shopping Cart</h2>
+            </div>
+            <ul id="items">
+            </ul>
+            <div class="btns">
+                <button id="clear">CLEAR CART</button>
+                <a href="file:///C:/Users/Murat/Desktop/Website/payment.html"><button id="check">CHECK OUT</button></a>
+            </div>
+            <p id="total">Total: ₸ 0</p>
+        </div>
+        <div class="cart-container2" id="container2">
+            <div class="naming">
+                <i class="far fa-heart"></i>
+                <h2>My wishlist</h2>
+                <i class="far fa-heart"></i>
+            </div>
+            <ul id="items2">
+            </ul>
+            <div class="favorites">
+            </div>
+        </div>
+        <div class="product-field">
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="HOOP EARRINGS">
+                        <img class="pictures" src="earring/3-NewHoopStandard_TubeHoopsMedium16mm_V_FLATLAY_210 2.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Tube Medium Hoops</strong>
+                            <div class="price">₸ 28 562</div>
+                            <small>Gold Vermeil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="HOOP EARRINGS">
+                        <img class="pictures" src="earring/0_DomeHuggies_earrings_yg_hero_Comp 2.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Dôme Huggies</strong>
+                            <div class="price">₸ 33 486</div>
+                            <small>Gold Vermeil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="STUD EARRINGS">
+                        <img class="pictures"
+                            src="earring/0-LGSBundles-Round4mmProngStudsV-12mmWhiteSapphireHoopsV-OffFigureAngledView-PDP 2.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Lab Grown Sapphire Studs and Hoops Bundle</strong>
+                            <div class="price">₸ 86 671</div>
+                            <small>Gold Vermeil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CARTILAGE & HELIX">
+                        <img class="pictures" src="earring/0_CartilageDiamondBeadedMiniHoop_YG_Hero 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Cartilage Pavé Diamond Mini Hoop</strong>
+                            <div class="price">₸ 87 656</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="DROP EARRINGS">
+                        <img class="pictures"
+                            src="earring/0-CHARLOTTEII-PuffyCharlotteDropEarringVermeilPearl-SS-Angled_062 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Puffy Charlotte Pearl Drop Earring</strong>
+                            <div class="price">₸ 63 041</div>
+                            <small>Gold Vermeil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="HOOP EARRINGS">
+                        <img class="pictures" src="earring/0_BoldHuggieHoops_yg_hero_comp 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Single Bold Huggie Hoop</strong>
+                            <div class="price">₸ 44 326</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <a href="productinfo2.html"><button class="btn2">VIEW MORE</button></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="DROP EARRINGS">
+                        <img class="pictures" src="earring/ClassicPearlDrop_earrings__White_yg_hero 1 (1).png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Essential Pearl Earrings</strong>
+                            <div class="price">₸ 97 517</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="PEARL EARRINGS">
+                        <img class="pictures"
+                            src="earring/0-SILVERBIGGIEDOMEEARRINGS_DomeBiggieEarrings_SS_Angled_241 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Mega Dôme Earrings</strong>
+                            <div class="price">₸ 48 266</div>
+                            <small>Sterling Silver</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="PEARL EARRINGS">
+                        <img class="pictures" src="earring/0-TINYDIAMONDS-DiamondLotusStuds-14K-Angled_326 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Mini Lotus Diamond Studs</strong>
+                            <div class="price">₸ 131 994</div>
+                            <small>Gold Vermil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="SINGLE EARRINGS">
+                        <img class="pictures"
+                            src="earring/0-BIRTHSTONESTUDSCHAINEARRINGS_SingleBarChainStud_14k_ChainStudAngled_130 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Single Bar Chain Stud</strong>
+                            <div class="price">₸ 49 251</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="SINGLE EARRINGS">
+                        <img class="pictures" src="earring/DiamondLineMiniHoop_yg_hero__1 1 .png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Single Diamonds Line Mini Hoop</strong>
+                            <div class="price">₸ 112 293</div>
+                            <small>Gold Vermeil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="SINGLE EARRINGS">
+                        <img class="pictures" src="earring/0_CartilageDiamondBeadedMiniHoop_YG_Hero 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Cartilage Diamond Beaded Mini Hoop</strong>
+                            <div class="price">₸ 97 517</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h4 class="view">YOU HAVE VIEWED 12 ITEMS OUT OF 12</h4>
+        <footer>
+            <div class="felements">
+                <div class="footer-content">
+                    <image class="flogo" src="images/logo.svg"></image>
+                </div>
+                <div class="footer-content">
+                    <h4>CONTACT INFO</h4>
+                    <li>Email: kasumij@mail.ru</li>
+                    <li>Phone: + 7 778 943 68 78</li>
+                    <li>Head Address: Atyrau Region</li>
+                </div>
+                <div class="footer-content">
+                    <h4>INFORMATION</h4>
+                    <li><a href="C:\Users\Murat\Desktop\Website\bestsellers.html">Best Sellers</a></li>
+                    <li><a href="C:\Users\Murat\Desktop\Website\bracelets.html">Bracelets</a></li>
+                    <li><a href="C:\Users\Murat\Desktop\Website\necklaces.html">Necklaces</a></li>
+                    <li><a href="C:\Users\Murat\Desktop\Website\earrings.html">Earrings</a></li>
+                </div>
+                <div class="icons2">
+                    <h4>KEEP IN TOUCH</h4>
+                    <div class="smedia">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab  fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </footer>
+    </body>
+    <script src="filter.js"></script>
+    <script src="earringcart.js"></script>
+    <script src="sign.js"></script>
+    <script src="earringwishlist.js"></script>
+    <script src="search.js"></script>
+    <script src="openingsidebar.js"></script>
+
+</html>

@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+a{
+list-style-type: none;
+text-decoration: none;
+}
+body{
+    background-color:#fffffffc;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    height:70px;
+    background-color: rgb(254, 254, 254);
+    width:100%;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.logopic{
+    position: relative;
+    height: 100%;
+    margin:0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li,.links{
+    list-style: none;
+    margin:0 20px;
+    color: black;
+}
+.links{
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.links::before{
+    content:"";
+    position: absolute;
+    bottom:-3px;
+    left:0;
+    height: 3px;
+    width:30%;
+    background: #0000006e;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.1s linear;
+    transform-origin: left;
+
+}
+.links:hover::before{
+    transform:scaleX(2);
+    color:#575757
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.images2,#pic1,#pic2{
+    display: flex;
+    flex-direction: column;
+    border-color:2px #575757;
+}
+.pictures{
+    width:600px;
+    height:600px;
+    cursor: pointer;
+}
+.pictures2{
+    width:50px;
+    height: 50px;
+    margin-top:10%;
+    margin:30px;
+    cursor: pointer;
+}
+.material{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.contact{
+    display: flex;
+    margin:10px;
+    gap:20px;
+}
+.material h1{
+    color:#575757;
+    padding:4px;
+}.selection{
+    padding:10px 20px;
+    border-color:#575757;
+    width:600px;
+}
+.order{
+    padding:10px 20px;
+    background-color:#575757;
+    color:aliceblue;
+    cursor: pointer;
+    width:600px;
+    border:none;
+}
+.order:hover{
+    background-color: black;
+    color:aliceblue;
+    transition-duration: 0.5s;
+}
+.allelements{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    margin-top:30px;
+    justify-content: center;
+
+}
+.stylepic{
+    width:130px;
+    height:130px;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:10px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+hr{
+    color:#575757;
+    width:630px;
+
+}
+.fa-caret-down{
+    display: flex;
+    flex-direction: row;
+}
+.detailinfo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.detailinfo.active {
+    max-height: 500px;
+}
+
+.detailinfo.active{
+    display: block;
+    
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.sharings{
+    position: absolute;
+    rotate: 90deg;
+    width:20px;
+    margin-left:80px;
+    margin-top:10px;
+}
+.contact{
+    color:#535353;
+    margin:10px;
+}
+
+.footer-content{
+    display:flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding:40px;
+    width: 100%;
+    
+}
+
+.icons2{
+    display:flex;
+    flex-direction: column;
+    padding:40px;
+}
+
+.icons2 i{
+    padding:5px;
+    color: #F6F6F6;
+    display: flex;   
+}
+.smedia{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.felements{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #353535;
+    color:#f9f6f6;
+    padding:20px;
+    margin-top:50px;
+    width:100%;
+}
+.footer-content li{
+ list-style-type: none;
+ padding:5px;
+}
+
+.flogo{
+    width:90px;
+    height:90px;
+}
+.footer-content a{
+    color:#F6F6F6;
+}
+.footer-content a:hover{
+    color: #575757;
+    transition-duration: 0.9;
+}
+.footer-content h4{
+    padding:5px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index:10;
+    margin-bottom: 10px;
+}

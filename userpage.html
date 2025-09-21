@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="userpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logopic">
+            <img class="logo" src="images/logo.svg">
+            <ul class="nav-links">
+                <li><a class="links" href="index.html">HOME</a></li>
+                <li><a class="links" href="bestsellers.html">BEST SELLERS</a></li>
+                <li><a class="links" href="earrings.html">EARRINGS</a></li>
+                <li><a class="links" href="bracelets.html">BRACELETS</a></li>
+                <li><a class="links" href="necklaces.html">NECKLACES</a></li>
+            </ul>
+            <div class="icons">
+                <i id="loginshow" class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="quantity"></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="profile">
+            <div class="profileheader">
+                <div class="user-img">
+                    <img id="photo" src="noname.jpg" style="width:130px; height: 130px;">
+                    <input type="file" id="file">
+                    <label id="uploadbtn"></label>
+                </div>
+                <div class="profile-text-container">
+                    <h3 class="profile-title">Daphnee123</h3>
+                    <p class="profile-title">blaked@gmail.com</p>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="iconandnaming">
+                    <h4>Account </h4>
+                    <a href="#" class="menu-link"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+                <div class="iconandnaming">
+                    <h4>Notifications </h4>
+                    <a href="#" class="menu-link"><i class="fa-solid fa-bell menu-icon"></i></a>
+                </div>
+                <div class="iconandnaming">
+                    <h4>Setting </h4>
+                    <a href="#" class="menu-link"><i class="fa-solid fa-gear menu-icon"></i></a>
+                </div>
+                <div class="iconandnaming">
+                    <h4>Logout </h4>
+                    <a href="#" class="menu-link"><i class="fa-solid fa-right-from-bracket menu-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <form class="account">
+            <div class="account-header">
+                <h1 class="account-title">Account Setting</h1>
+                <div class="btn-container">
+                    <button class="btn-cancel">Cancel</button>
+                </div>
+            </div>
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>First Name</label>
+                    <h3>Daphne</h3>
+                </div>
+                <div class="input-container">
+                    <label>Last Name</label>
+                    <h3>Blake</h3>
+                </div>
+            </div>
+            <div class="input-container">
+                <label>Created in</label>
+                <h3>18.11.2024</h3>
+            </div>
+            <div class="input-container">
+                <label>Orders</label>
+                <h3>0</h3>
+            </div>
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>Email</label>
+                    <h3>blaked@gmail.com</h3>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+<script src="user.js"></script>
+
+</html>

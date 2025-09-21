@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <i class="fa fa-check"></i>
+        <h2>Payment is sucessful!</h2>
+        <p>Follow your email every 3 days</p>
+        <button id="closemodal">Close</button>
+    </div>
+    <nav>
+        <div class="logopic">
+            <img class="logo" src="images/logo.svg">
+            <ul class="nav-links">
+                <li><a class="links" href="index.html">HOME</a></li>
+                <li><a class="links" href="bestsellers.html">BEST SELLERS</a></li>
+                <li><a class="links" href="earrings.html">EARRINGS</a></li>
+                <li><a class="links" href="bracelets.html">BRACELETS</a></li>
+                <li><a class="links" href="necklaces.html">NECKLACES</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="allitems">
+        <div class="container2">
+            <div class="items">
+                <img class="pic" src="bracelet/0-BoyfriendBoldPaveBarBracelet-14K-TopDown_437 1.png">
+                <h4>Bold Pave Bar Bracelet</h4>
+            </div>
+            <div class="boxinfo">
+                <h4>Price</h4>
+                <h4>28562 tg</h4>
+                <h4>Discounts</h4>
+                <h4>10%</h4>
+                <h4>Total</h4>
+                <h4>25705 tg</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <h1>ORDER REGISTRATION</h1>
+        <form action="">
+            </label>
+            <label for="sname">Surname and Name
+                <input type="text" name="sname" id="sname">
+            </label>
+            <label for="email">Email
+                <input type="text" name="email" id="email">
+            </label>
+            <label for="payment">Payment method
+                <select name="payment" id="payment">
+                    <option value="Kaspi">Kaspi</option>
+                    <option value="Visa">Visa</option>
+                </select>
+            </label>
+            <label for="country">Country
+                <select name="country" id="country">
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                </select>
+                <label for="cardno">Card Number
+                    <input type="text" name="cardno" id="cardno" maxlength="16" onkeypress="cardspace">
+                </label>
+                <div class="float">
+                    <label for="validtill">Expiry Date
+                        <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes">
+                    </label>
+                    <label for="cvv">CVV
+                        <input type="text" name="cvv" id="cvv" maxlength="3">
+                    </label>
+                </div>
+                <label for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <p>I agree for my personal information</p>
+                </label>
+                <button id="openmodal">Pay</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    const open = document.getElementById("openmodal");
+    const close = document.getElementById("closemodal");
+    const modal = document.getElementById("modal");
+
+    open.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.add("active");
+    });
+
+    close.addEventListener("click", () => {
+        modal.classList.remove("active");
+    });
+
+</script>
+
+</html>

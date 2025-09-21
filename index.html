@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="name" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button class="signin">Sign In</button>
+            </div>
+            <div class="form-element">
+                <div class="forgotnew">
+                    <a class="forgot" href="#">Forgot Password</a>
+                    <a class="forgot" id="forgott" href="#">Don't have an account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Sign Up</h2>
+            <div class="form-element">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name">
+            </div>
+            <div class="form-element">
+                <label for="email">Surname</label>
+                <input type="text" id="surname" placeholder="Enter surname">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="name" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <h6>Password must contain 8 letters</h6>
+                <h6>Password must contain numbers</h6>
+                <h6>Password must contain capitalized letters</h6>
+            </div>
+            <div class="form-element">
+                <a href="C:\Users\Murat\Desktop\Website\userpage.html"><button class="signin">Sign Up</button></a>
+            </div>
+            <div class="form-element">
+                <div class="forgotnew">
+                    <a class="login-link" id="login" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <nav>
+        <div class="logopic">
+            <img class="logo" src="images/logo.svg">
+            <ul class="nav-links">
+                <li><a class="links" href="index.html">HOME</a></li>
+                <li><a class="links" href="bestsellers.html">BEST SELLERS</a></li>
+                <li><a class="links" href="earrings.html">EARRINGS</a></li>
+                <li><a class="links" href="bracelets.html">BRACELETS</a></li>
+                <li><a class="links" href="necklaces.html">NECKLACES</a></li>
+            </ul>
+            <div class="icons">
+                <i id="loginshow" class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img class="pic1" src="images/pic 1.jpg">
+                    <h2>THE PERFECT SEASON IS COMING</h2>
+                    <h3>TIME FOR MAGIC JEWELS </h3>
+                    <a href="C:\Users\Murat\Desktop\Website\bracelets.html"><button class="btn">SHOP NOW</button></a>
+                </div>
+                <div class="item">
+                    <img class="pic1" src="images/pic 2.jpg">
+                    <h2>NEW COLLECTION</h2>
+                    <h3>THE EMBODIMENT OF ATTRACTION</h3>
+                    <a href="C:\Users\Murat\Desktop\Website\bestsellers.html"><button class="btn">SHOP NOW</button></a>
+                </div>
+                <div class="item">
+                    <img class="pic1" src="images/pic 3.jpg">
+                    <h2>THE KINGDOM OF DECORATION</h2>
+                    <h3>BEAUTY IS EVERYWHERE</h3>
+                    <a href="C:\Users\Murat\Desktop\Website\bracelets.html"><button class="btn">SHOP NOW</button></a>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev">&#8592;</button>
+                <button id="next">&#8594;</button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <section class="recommendation">
+        <h1>RECOMMENDED FOR YOU</h1>
+        <div class="allrecommends">
+            <div class="pictures2">
+                <img class="accesory" src="images/bracelet.jpg">
+                <h1>BRACELETS</h1>
+                <div class="overlay">
+                    <h3>Bracelets are the most comfortable and bright accessories </h3>
+                    <a href="C:\Users\Murat\Desktop\Website\bracelets.html"><button class="btn2">SHOP NOW </button></a>
+                </div>
+            </div>
+            <div class="pictures2">
+                <img class="accesory" src="images/necklaces.jpg">
+                <h1>NECKLACES</h1>
+                <div class="overlay">
+                    <h3>A necklace embodies grace and elevates every moment</h3>
+                    <a href="C:\Users\Murat\Desktop\Website\necklaces.html"><button class="btn2">SHOP NOW </button></a>
+                </div>
+            </div>
+            <div class="pictures2">
+                <img class="accesory" src="images/earring.jpg">
+                <h1>EARRINGS</h1>
+                <div class="overlay">
+                    <h3>Earrings will catch a thousand gazes of thousand people</h3>
+                    <a href="C:\Users\Murat\Desktop\Website\earrings.html"><button class="btn2">SHOP NOW </button></a>
+                </div>
+            </div>
+            <div class="pictures2">
+                <img class="accesory" src="images/collection.jpg">
+                <h1>COLLECTIONS</h1>
+                <div class="overlay">
+                    <h3>A jewelry that becomes a part of you,your natural elegance</h3>
+                    <a href="C:\Users\Murat\Desktop\Website\bestsellers.html"><button class="btn2">SHOP NOW
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="collection1">
+        <h1>TRENDY COLLECTION</h1>
+        <div class="collectionitems1">
+            <div class="container">
+                <img class="pictures1" src="images/bracelet.png">
+                <h4>Tennis Chain Bracelet in Silver</h4>
+                <h5>₸ 39 754,15</h5>
+                <h6>Rhodium Plated</h6>
+            </div>
+            <div class="container">
+                <img class="pictures1" src="images/necklace.png">
+                <h4>Cosmic Charm Drop Necklace in Gold</h4>
+                <h5>₸ 50 355,25</h5>
+                <h6>18k Gold Plated Recycled Sterling Silver</h6>
+            </div>
+            <div class="container">
+                <img class="pictures1" src="images/ring.png">
+                <h4>Pavé Crystal Illusion Ring in Gold</h4>
+                <h5>₸ 39 754,15</h5>
+                <h6>18k Gold Plated Recycled Sterling Silver</h6>
+            </div>
+            <div class="container">
+                <img class="pictures1" src="images/silver necklace.png">
+                <h4>Tennis Chain Necklace in Silver</h4>
+                <h5>₸ 53 005,53</h5>
+                <h6>Rhodium Plated</h6>
+            </div>
+        </div>
+        <h1>AUTUMN COLLECTION</h1>
+        <div class="collectionitems1">
+            <div class="container">
+                <img class="pictures1" src="images/golden ring.png">
+                <h4>Lab Grown Sapphire Huggies</h4>
+                <h5>₸ 63 001,6</h5>
+                <h6>Gold Vermeil</h6>
+            </div>
+            <div class="container">
+                <img class="pictures1" src="images/bracelet silver.png">
+                <h4>Lab Grown Sapphire Tennis Bracelet</h4>
+                <h5>₸ 146 675,6</h5>
+                <h6>Sterling Silver</h6>
+            </div>
+            <div class="container">
+                <img class="pictures1" src="images/cuff.png">
+                <h4>Dôme Figure Cuff</h4>
+                <h5>₸ 122 065,6</h5>
+                <h6>Sterling Silver</h6>
+            </div>
+            <div class="container">
+                <img class="pictures1" src="images/golden earring.png">
+                <h4>Puffy Charlotte Pearl Drop Earring</h4>
+                <h5>₸ 63 001,6</h5>
+                <h6>Sterling Silver</h6>
+            </div>
+        </div>
+    </section>
+    <section class="companypros">
+        <h2>THE KASUMI EXPERIENCE</h2>
+        <div class="all">
+            <div class="effectiveside">
+                <div class="container2">
+                    <img class="pictures2" src="images/truck.svg">
+                    <h4>Complimentary shipping and returns</h4>
+                </div>
+                <div class="container2">
+                    <img class="pictures2" src="images/verified.svg">
+                    <h4>Complimentary shipping and returns</h4>
+                </div>
+                <div class="container2">
+                    <img class="pictures2" src="images/pearl.svg">
+                    <h4>Complimentary shipping and returns</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mission">
+        <div class="missionbanner">
+            <img class="pictures3" src="images/mission.jpg">
+            <div class="text">
+                <h5>OUR COMMITMENTS</h5>
+                <h1>TRANSFORMING MISSION INTO IMPACT</h1>
+                <p>This October, we’re excited to share an update on our commitments, showcasing our progress toward our
+                    2030 sustainability and social impact goals as part of our dedication to transparency.</p>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <footer>
+        <div class="felements">
+            <div class="footer-content">
+                <image class="flogo" src="images/logo.svg"></image>
+            </div>
+            <div class="footer-content">
+                <h4>CONTACT INFO</h4>
+                <li>Email: kasumij@mail.ru</li>
+                <li>Phone: + 7 778 943 68 78</li>
+                <li>Head Address: Atyrau Region</li>
+            </div>
+            <div class="footer-content">
+                <h4>INFORMATION</h4>
+                <li><a href="C:\Users\Murat\Desktop\Website\bestsellers.html">Best Sellers</a></li>
+                <li><a href="C:\Users\Murat\Desktop\Website\bracelets.html">Bracelets</a></li>
+                <li><a href="C:\Users\Murat\Desktop\Website\necklaces.html">Necklaces</a></li>
+                <li><a href="C:\Users\Murat\Desktop\Website\earrings.html">Earrings</a></li>
+            </div>
+            <div class="icons2">
+                <h4>KEEP IN TOUCH</h4>
+                <div class="smedia">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab  fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    </footer>
+</body>
+<script src="homepage.js"></script>
+<script src="sign.js"></script>
+
+</html>

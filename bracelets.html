@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracelets</title>
+    <link rel="stylesheet" href="bracelets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logopic">
+            <img class="logo" src="images/logo.svg">
+            <ul class="nav-links">
+                <li><a class="links" href="index.html">HOME</a></li>
+                <li><a class="links" href="bestsellers.html">BEST SELLERS</a></li>
+                <li><a class="links" href="earrings.html">EARRINGS</a></li>
+                <li><a class="links" href="bracelets.html">BRACELETS</a></li>
+                <li><a class="links" href="necklaces.html">NECKLACES</a></li>
+            </ul>
+            <div class="icons">
+                <i id="loginshow" class="fa-regular fa-user"></i>
+                <a href="userpage.html"><img src="noname.jpg"
+                        style="width:20px;height:20px;border-radius: 10px;position: absolute;margin-bottom:15px;right:6.3%;"></a>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping" onclick="toggle()"></i>
+                <span class="quantity"></span>
+                <span class="quantity2"></span>
+            </div>
+        </div>
+    </nav>
+    </head>
+
+    <body>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Log in</h2>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button class="signin">Sign In</button>
+                </div>
+                <div class="form-element">
+                    <div class="forgotnew">
+                        <a class="forgot" href="#">Forgot Password</a>
+                        <a class="forgot" id="forgott" href="#">Don't have an account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Sign Up</h2>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-element">
+                    <label for="email">Surname</label>
+                    <input type="text" id="surname" placeholder="Enter surname">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <h6>Password must contain 8 letters</h6>
+                    <h6>Password must contain numbers</h6>
+                    <h6>Password must contain capitalized letters</h6>
+                </div>
+                <div class="form-element">
+                    <a href="C:\Users\Murat\Desktop\Website\userpage.html"><button class="signin">Sign Up</button></a>
+                </div>
+                <div class="form-element">
+                    <div class="forgotnew">
+                        <a class="login-link" id="login" href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <section class="banner">
+            <div class="missionbanner">
+                <img class="pictures3" src="bracelet/bracelet section.jpg">
+                <div class="text">
+                    <h2>ALL BRACELETS</h2>
+                    <p>Kasumi jewelry is a unique expression of a creator's style and imagination. To learn more about
+                        these exceptional pieces, discover our collection of both men’s and women's bracelets.</p>
+                </div>
+            </div>
+        </section>
+        <main>
+            <header>
+                <div class="indicatorlist">
+                    <h2>Bracelets</h2>
+                    <h3>Elevate your jewelry ensemble with silver and gold bracelets.</h3>
+                    <div class="container-fluid">
+                        <div class="container3">
+                            <div class="search">
+                                <input type="text" name="" id="find" placeholder="Search" onkeyup="search()" />
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="indicator">
+                        <li data-filter="ALL" class="active"><a href="#">BRACELETS-ANKLETS</a></li>
+                        <li data-filter="CHAIN BRACELETS" class="active"><a href="#">CHAIN BRACELETS</a></li>
+                        <li data-filter="CHARM BRACELETS" class="active"><a href="#">CHARM BRACELETS</a></li>
+                        <li data-filter="CUFFS" class="active"><a href="#">CUFFS</a></li>
+                        <li data-filter="TENNIS BRACELETS" class="active"><a href="#">TENNIS</a></li>
+                        <li data-filter="CLASH DE KASUMI" class="active"><a href="#">CLASH KASUMI</a></li>
+                    </ul>
+                </div>
+            </header>
+            </div>
+        </main>
+        <div class="cart-container1" id="container1">
+            <div class="naming">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Shopping Cart</h2>
+            </div>
+            <ul id="items">
+            </ul>
+            <div class="btns">
+                <button id="clear">CLEAR CART</button>
+                <a href="file:///C:/Users/Murat/Desktop/Website/payment.html"><button id="check">CHECK OUT</button></a>
+            </div>
+            <p id="total">Total: ₸ 0</p>
+        </div>
+        <div class="cart-container2" id="container2">
+            <div class="naming">
+                <i class="far fa-heart"></i>
+                <h2>My wishlist</h2>
+                <i class="far fa-heart"></i>
+            </div>
+            <ul id="items2">
+            </ul>
+            <div class="favorites">
+            </div>
+        </div>
+        <div class="product-field">
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="ALL">
+                        <img class="pictures" src="bracelet/letter.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Letter Bracelet</strong>
+                            <div class="price">₸ 82 731</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="ALL">
+                        <img class="pictures" src="bracelet/bolddiamond.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Diamond Tennis Bracelet 1.8mm</strong>
+                            <div class="price">₸ 1 477 350</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="ALL">
+                        <img class="pictures" src="bracelet/0-BoyfriendBoldPaveBarBracelet-14K-TopDown_437 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Bold Pavé Diamond Bar Bracelet</strong>
+                            <div class="price">₸ 260 013</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <a href="productinfo.html"><button class="btn2">VIEW MORE</button></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CHAIN BRACELETS">
+                        <img class="pictures"
+                            src="bracelet/0-ENHANCERCHAINS-CurbChainCharmBracelet-14K-TopDown_070 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Curb Chain Charm Bracelet</strong>
+                            <div class="price">₸ 319 107</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CHAIN BRACELETS">
+                        <img class="pictures" src="bracelet/0-SpheresBracelet-14K-TopDown_169 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Spheres Chain Bracelet</strong>
+                            <div class="price">₸ 28 562</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CHAIN BRACELETS">
+                        <img class="pictures" src="bracelet/0_AnchorChain_bracelet_yg_topdown_hero 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Anchor Chain Bracelet</strong>
+                            <div class="price">₸ 87 656</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CHARM BRACELETS">
+                        <img class="pictures" src="bracelet/0_DotChainAnklet_YG_Hero 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Dot Chain Anklet</strong>
+                            <div class="price">₸ 127 052</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CHARM BRACELETS">
+                        <img class="pictures" src="bracelet/0_MiniPearlSatelliteBracelet_V_Hero 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Mini Pearl Satellite Bracelet</strong>
+                            <div class="price">₸ 48 260</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CUFFS">
+                        <img class="pictures"
+                            src="bracelet/0-VERMEILBRACELETS_MultiStationBraceletHeartVermeil_V_TopDown_033 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Heart Station Bracelet</strong>
+                            <div class="price">₸ 43 335</div>
+                            <small>Gold Vermil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="TENNIS BRACELETS">
+                        <img class="pictures" src="bracelet/0-DiamondHalfTennisBracelet-14K-Front_233 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Diamond Half Tennis Bracelet</strong>
+                            <div class="price">₸ 442 220</div>
+                            <small>14k Yellow Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CHARM BRACELETS">
+                        <img class="pictures" src="bracelet/Dome_cuff_bracelet_v_hero 1.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Dôme Cuff Bracelet</strong>
+                            <div class="price">₸ 63033</div>
+                            <small>Gold Vermeil</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="items">
+                    <li data-filter="CLASH DE KASUMI">
+                        <img class="pictures" src="bracelet/image_2.png">
+                        <div class="detail">
+                            <div class="share">
+                                <button class="favoritess"><i class="fa-solid fa-heart"></i></button>
+                                <button class="favoritess"><i class="far fa-share-square"></i></button>
+                            </div>
+                            <strong>Clash de Kasumi</strong>
+                            <div class="price">₸ 14 182 560</div>
+                            <small>18k Rose Gold</small>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn2">VIEW MORE</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h4 class="view">YOU HAVE VIEWED 12 ITEMS OUT OF 12</h4>
+        <footer>
+            <div class="felements">
+                <div class="footer-content">
+                    <image class="flogo" src="images/logo.svg"></image>
+                </div>
+                <div class="footer-content">
+                    <h4>CONTACT INFO</h4>
+                    <li>Email: kasumij@mail.ru</li>
+                    <li>Phone: + 7 778 943 68 78</li>
+                    <li>Head Address: Atyrau Region</li>
+                </div>
+                <div class="footer-content">
+                    <h4>INFORMATION</h4>
+                    <li><a href="C:\Users\Murat\Desktop\Website\bestsellers.html">Best Sellers</a></li>
+                    <li><a href="C:\Users\Murat\Desktop\Website\bracelets.html">Bracelets</a></li>
+                    <li><a href="C:\Users\Murat\Desktop\Website\necklaces.html">Necklaces</a></li>
+                    <li><a href="C:\Users\Murat\Desktop\Website\earrings.html">Earrings</a></li>
+                </div>
+                <div class="icons2">
+                    <h4>KEEP IN TOUCH</h4>
+                    <div class="smedia">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab  fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </footer>
+    </body>
+    <script src="filter.js"></script>
+    <script src="braceletcart.js"></script>
+    <script src="sign.js"></script>
+    <script src="braceletwishlist.js"></script>
+    <script src="search.js"></script>
+    <script src="openingsidebar.js"></script>
+
+</html>
