@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[kasumi-fawn.vercel.app](kasumi-fawn.vercel.app)
+https://kasumi-fawn.vercel.app/
 
   
   
